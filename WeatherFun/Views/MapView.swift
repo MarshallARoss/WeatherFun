@@ -20,7 +20,8 @@ struct MapView: View {
     }
    
     var body: some View {
-        Map(coordinateRegion: $region, interactionModes: .zoom, showsUserLocation: true)
+        Map(coordinateRegion: $region, showsUserLocation: true)
+            .disabled(true)
     }
 }
 
