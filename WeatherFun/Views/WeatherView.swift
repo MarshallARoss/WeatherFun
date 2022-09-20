@@ -25,9 +25,18 @@ struct WeatherView: View {
                     VStack {
                         HStack {
                             
-                            VStack(spacing: 20) {
-                                Image(systemName: "sun.max")
-                                    .font(.system(size: 40))
+                            VStack(alignment: .leading) {
+
+                                AsyncImage(url: weather.weather[0].mediumIconURL) { phase in
+                                    switch phase {
+                                    case .success(let image):
+                                        image
+                                    default:
+                                        ProgressView()
+                                    }
+                                }
+                                .frame(maxWidth: 150, maxHeight: 100)
+
                                 
                                 Text(weather.weather[0].main)
                             }
@@ -41,18 +50,14 @@ struct WeatherView: View {
                     }
                         
                     Spacer()
-                          
-                        
-                        Image(systemName: "sun.max")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                                                
+
                 }
                 }
                 .frame(maxWidth: .infinity)
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
+            
             
             VStack {
                 Spacer()
@@ -77,6 +82,7 @@ struct WeatherView: View {
                 .background(.white)
                 .cornerRadius(20, corners: [.topLeft, .topRight])
             }
+            
         }
         .edgesIgnoringSafeArea(.bottom)
         .background(Color(hue: 0.639, saturation: 0.575, brightness: 0.484))

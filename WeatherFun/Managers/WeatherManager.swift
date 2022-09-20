@@ -48,6 +48,7 @@ struct ResponseBody: Codable {
     let timezone, id: Int
     let name: String
     let cod: Int
+
 }
 
 // MARK: - Clouds
@@ -91,6 +92,21 @@ struct Weather: Codable {
         case weatherDescription = "description"
         case icon
     }
+    
+    var mediumIconURL: URL? {
+        let icon = self.icon
+        let string =  "https://openweathermap.org/img/wn/\(icon)@2x.png"
+        let url = URL(string: string)
+        return url
+    }
+    
+    var largeIconURL: URL? {
+        let icon = self.icon
+        let string =  "https://openweathermap.org/img/wn/\(icon)@4x.png"
+        let url = URL(string: string)
+        return url
+    }
+
 }
 
 // MARK: - Wind

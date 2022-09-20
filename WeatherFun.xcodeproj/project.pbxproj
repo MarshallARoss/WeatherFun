@@ -21,7 +21,7 @@
 		AB21A56228DA4AEE000F1375 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56128DA4AEE000F1375 /* Extensions.swift */; };
 		AB21A56428DA5558000F1375 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56328DA5558000F1375 /* WeatherRow.swift */; };
 		AB21A56728DA5F94000F1375 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56628DA5F94000F1375 /* Secrets.swift */; };
-		AB21A56928DA6313000F1375 /* SecretsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56828DA6313000F1375 /* SecretsTemplate.swift */; };
+		AB21A56B28DA6EF2000F1375 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56A28DA6EF2000F1375 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		AB21A56128DA4AEE000F1375 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AB21A56328DA5558000F1375 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
 		AB21A56628DA5F94000F1375 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
-		AB21A56828DA6313000F1375 /* SecretsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsTemplate.swift; sourceTree = "<group>"; };
+		AB21A56A28DA6EF2000F1375 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				AB21A56628DA5F94000F1375 /* Secrets.swift */,
-				AB21A56828DA6313000F1375 /* SecretsTemplate.swift */,
 				AB21A55128DA3B1E000F1375 /* Managers */,
 				AB21A54128D9263D000F1375 /* WeatherFunApp.swift */,
 				AB21A56528DA5571000F1375 /* Component */,
@@ -112,6 +111,7 @@
 				AB21A55728DA3FCF000F1375 /* LoadingView.swift */,
 				AB21A55528DA3C98000F1375 /* WelcomeView.swift */,
 				AB21A55B28DA4898000F1375 /* WeatherView.swift */,
+				AB21A56A28DA6EF2000F1375 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,11 +196,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB21A55A28DA42F6000F1375 /* WeatherManager.swift in Sources */,
+				AB21A56B28DA6EF2000F1375 /* MapView.swift in Sources */,
 				AB21A56228DA4AEE000F1375 /* Extensions.swift in Sources */,
 				AB21A54428D9263D000F1375 /* ContentView.swift in Sources */,
 				AB21A54228D9263D000F1375 /* WeatherFunApp.swift in Sources */,
 				AB21A55028DA3B19000F1375 /* LocationManager.swift in Sources */,
-				AB21A56928DA6313000F1375 /* SecretsTemplate.swift in Sources */,
 				AB21A56428DA5558000F1375 /* WeatherRow.swift in Sources */,
 				AB21A55828DA3FCF000F1375 /* LoadingView.swift in Sources */,
 				AB21A55E28DA48BD000F1375 /* ModelData.swift in Sources */,
