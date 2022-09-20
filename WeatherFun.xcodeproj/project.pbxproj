@@ -22,6 +22,7 @@
 		AB21A56428DA5558000F1375 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56328DA5558000F1375 /* WeatherRow.swift */; };
 		AB21A56728DA5F94000F1375 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56628DA5F94000F1375 /* Secrets.swift */; };
 		AB21A56B28DA6EF2000F1375 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56A28DA6EF2000F1375 /* MapView.swift */; };
+		AB21A56D28DA74BF000F1375 /* SecretsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21A56C28DA74BF000F1375 /* SecretsTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		AB21A56328DA5558000F1375 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
 		AB21A56628DA5F94000F1375 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		AB21A56A28DA6EF2000F1375 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AB21A56C28DA74BF000F1375 /* SecretsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				AB21A56628DA5F94000F1375 /* Secrets.swift */,
+				AB21A56C28DA74BF000F1375 /* SecretsTemplate.swift */,
 				AB21A55128DA3B1E000F1375 /* Managers */,
 				AB21A54128D9263D000F1375 /* WeatherFunApp.swift */,
 				AB21A56528DA5571000F1375 /* Component */,
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB21A56D28DA74BF000F1375 /* SecretsTemplate.swift in Sources */,
 				AB21A55A28DA42F6000F1375 /* WeatherManager.swift in Sources */,
 				AB21A56B28DA6EF2000F1375 /* MapView.swift in Sources */,
 				AB21A56228DA4AEE000F1375 /* Extensions.swift in Sources */,
