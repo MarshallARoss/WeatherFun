@@ -15,7 +15,7 @@ struct MapView: View {
     init(weather: ResponseBody) {
         self.weather = weather
         let location = CLLocationCoordinate2D(latitude: weather.coord.lat, longitude: weather.coord.lon)
-        let region = MKCoordinateRegion(center: location, latitudinalMeters: 5.0, longitudinalMeters: 5.0)
+        let region = MKCoordinateRegion(center: location, latitudinalMeters: 20000.0, longitudinalMeters: 20000.0)
         _region = State(wrappedValue: region)
     }
    

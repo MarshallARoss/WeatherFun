@@ -14,11 +14,14 @@ struct WeatherView: View {
         ZStack(alignment: .leading) {
             VStack{
                 VStack(alignment: .leading, spacing: 5) {
+                    VStack{
                     Text(weather.name)
                         .bold().font(.title)
                     
                     Text("Today, \(Date().formatted(.dateTime.month().day().hour().minute()))")
                         .fontWeight(.light)
+                    }
+                    .padding()
                     
                     Spacer()
                     
@@ -47,15 +50,22 @@ struct WeatherView: View {
                                 .font(.system(size: 100))
                                 .fontWeight(.bold)
                                 .padding()
+                            
                     }
+                        .padding()
+                                                
+                    MapView(weather: weather)
+                            .frame(height: 300)
+                            .preferredColorScheme(.light)
+                            .clipShape(RoundedRectangle(cornerRadius: 40))
                         
-                    Spacer()
+                        Spacer()
+                        
 
                 }
                 }
                 .frame(maxWidth: .infinity)
             }
-            .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
             
             
@@ -82,6 +92,7 @@ struct WeatherView: View {
                 .background(.white)
                 .cornerRadius(20, corners: [.topLeft, .topRight])
             }
+             
             
         }
         .edgesIgnoringSafeArea(.bottom)
